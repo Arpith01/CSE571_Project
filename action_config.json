@@ -1,0 +1,66 @@
+{
+    "pick": { 
+        "function": "execute_pick",
+        "params": ["book_name"],
+        "success_reward": 25,
+        "fail_reward": -25,
+        "possibilities": {
+            "pick": 1,
+            "noaction": 0
+        }
+    },
+    "place": { 
+        "function": "execute_place",
+        "params": ["book_name", "bin_name"],
+        "success_reward": 500,
+        "fail_reward": -25,
+        "possibilities": {
+            "place": 1,
+            "noaction": 0
+        }
+    },
+    "moveF": { 
+        "function": "execute_moveF",
+        "params": [],
+        "success_reward": -10,
+        "fail_reward": -20,
+        "possibilities": {
+            "moveF": 1,
+            "noaction": 0
+        }
+    },
+    "moveB": { 
+        "function": "execute_moveB",
+        "params": [],
+        "success_reward": -10,
+        "fail_reward": -20,
+        "possibilities": {
+            "moveB": 1,
+            "noaction": 0
+        }
+    },
+    "TurnCW": { 
+        "function": "execute_TurnCW",
+        "params": [],
+        "success_reward": -10,
+        "fail_reward": -20,
+        "possibilities": {
+            "TurnCW": 1,
+            "noaction": 0
+        }
+    },
+    "TurnCCW": { 
+        "function": "execute_TurnCCW",
+        "params": [],
+        "success_reward": -10,
+        "fail_reward": -20,
+        "possibilities": {
+            "TurnCCW": 1,
+            "noaction": 0
+        }
+    },
+    "noaction": {
+        "success_reward": -25,
+        "fail_reward": -25
+    }
+}
